@@ -39,7 +39,7 @@ public class RealNumberOperations {
         this.number = this.number.add(number.number);
         double n = number.number.doubleValue();
         this.val = this.AnalyseVal(n);
-        this.AnalyseNdp(n);
+        this.bdp = this.AnalyseNdp(n);
         return this;
     }
 
@@ -51,7 +51,7 @@ public class RealNumberOperations {
         this.number = this.number.multiply(number.number);
         double n = number.number.doubleValue();
         this.val = this.AnalyseVal(n);
-        this.AnalyseNdp(n);
+        this.bdp = this.AnalyseNdp(n);
         return this;
     }
 
